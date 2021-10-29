@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "dist",
+    "target": "es6",
+    "lib": ["dom", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+
+    "noEmit": false,
+    "jsx": "react-jsx",
+
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false, // NOTE: Remove when redux-saga works with TypeScript 4.2+
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "*.d.ts",
+    "apps/*/*.js"
+  ]
+}

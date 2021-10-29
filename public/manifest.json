@@ -1,0 +1,57 @@
+{
+  "short_name": "Rodones Panel",
+  "name": "Rodones Mapping Project Node Control Panel",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon",
+      "purpose": "any"
+    },
+    {
+      "type": "image/png",
+      "sizes": "32x32",
+      "purpose": "markable"
+    },
+    {
+      "src": "logo_32.png",
+      "type": "image/png",
+      "sizes": "32x32",
+      "purpose": "markable"
+    },
+    {
+      "src": "logo_64.png",
+      "type": "image/png",
+      "sizes": "64x64",
+      "purpose": "markable"
+    },
+    {
+      "src": "logo_128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "markable"
+    },
+    {
+      "src": "logo_196.png",
+      "type": "image/png",
+      "sizes": "196x196",
+      "purpose": "markable"
+    },
+    {
+      "src": "logo_256.png",
+      "type": "image/png",
+      "sizes": "256x256",
+      "purpose": "markable"
+    },
+    {
+      "src": "logo_512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "markable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#339CD7",
+  "background_color": "#339CD7"
+}
