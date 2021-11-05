@@ -53,6 +53,10 @@ function getAppConfig(envPrefix) {
             },
           },
         },
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
       ],
     },
     resolve: {
@@ -61,6 +65,7 @@ function getAppConfig(envPrefix) {
     output: {
       path: path.resolve(__dirname, "dist"),
       filename: "bundle.js",
+      publicPath: "/",
     },
     stats: {
       modules: false,
@@ -70,6 +75,7 @@ function getAppConfig(envPrefix) {
       compress: true,
       open: false,
       hot: true,
+      historyApiFallback: true,
     },
     plugins: RA.compact([
       new ProvidePlugin({

@@ -23,8 +23,8 @@ module.exports = {
   },
   plugins: ["react", "react-hooks", "@typescript-eslint", "prettier"],
   rules: {
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/ban-ts-comment": 0,
     "@typescript-eslint/no-shadow": ["error"],
     "import/extensions": [
       "error",
@@ -43,14 +43,15 @@ module.exports = {
       "error",
       { varsIgnorePattern: "^_", argsIgnorePattern: "^_" },
     ],
-    "no-use-before-define": "off",
-    "no-shadow": "off",
+    "no-use-before-define": 0,
+    "no-shadow": 0,
+    camelcase: 0,
     "func-names": ["error", "always", { generators: "never" }],
     "react/prop-types": 0,
     "react/require-default-props": 0,
     "react/jsx-props-no-spreading": 0,
     "no-underscore-dangle": 0,
-    "no-nested-ternary": "off",
+    "no-nested-ternary": 0,
     "react/jsx-wrap-multilines": [
       "error",
       { declaration: false, assignment: false },
@@ -58,24 +59,10 @@ module.exports = {
     // NOTE: https://github.com/import-js/eslint-plugin-import/issues/1174
     "import/no-extraneous-dependencies": 0,
   },
-  overrides: [
-    {
-      files: ["./*.js", "apps/*/*.js", "packages/*/*.js"],
-      rules: {
-        "@typescript-eslint/no-var-requires": 0,
-      },
-    },
-    {
-      files: ["**/store/**/*", "packages/helpers/**/*"],
-      rules: {
-        // "func-names": 0,
-      },
-    },
-  ],
   settings: {
     "import/resolver": {
       typescript: {},
     },
   },
-  ignorePatterns: ["**/dist/*"],
+  ignorePatterns: ["./node_modules", "./dist"],
 };

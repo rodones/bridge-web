@@ -5,6 +5,6 @@ const ENV_IDENTIFIER = "RODONES_PANEL";
 
 module.exports = mergeDeepRight(getWebpackConfig(ENV_IDENTIFIER), {
   devServer: {
-    port: 8000,
+    port: 8001,
   },
 });
