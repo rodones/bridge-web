@@ -1,3 +1,3 @@
 # rodones-bridge-web
 
-A web a
+An administration panel to manage rodones clusters. Planned but discontinued before implementation.
